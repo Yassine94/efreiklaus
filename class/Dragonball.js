@@ -9,19 +9,21 @@ const DBHeroes = {
 }
 
 class DragonBall extends Figurine {
+   #_character = DBHeroes;
    constructor(_character) {
-       var character = DBHeroes ;
-    var _character = character
-    this.setCharacter = function(character) { _character = character; }
-    this.getCharacter = function() { return _character; }
+      super()
+      this._character = _character;
+      this.type = `Dragon Ball figurine ${this._character}`
+    console.log(`${this._character} is singing -->
+    CHA-LA HEAD CHA-LA
+    Nani ga okite mo kibun wa heno-heno kappa
+    CHA-LA HEAD CHA-LA
+    Mune ga pachi-pachi suru hodo
+    Sawagu Genki-Dama --Sparking !`)
     this.isMoved = function() {  console.log("Kamé Hamé Ha!!"); }
   
-   }
-
-   isMoved() {
-     console.log("Kamé Hamé Ha!!")
    }
 }
 
 
- module.exports = DragonBall;
+ module.exports = {DragonBall, DBHeroes};
