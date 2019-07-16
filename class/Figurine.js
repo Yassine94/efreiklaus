@@ -2,9 +2,9 @@ const Toy = require('./Toy')
 
 class Figurine extends Toy{
 
-    constructor(type,property,) {
+    constructor(type) {
         super(type);
-      this.property = 'value';
+   
  
     }
 }
