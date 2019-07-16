@@ -1,5 +1,5 @@
 
-const Figurine = require('./Figurine')
+const Figurine = require('./protocol/Figurine')
 
 const DBHeroes = {
    SANGOKU: 'SANGOKU',
