@@ -1,20 +1,22 @@
 const Toy = require('./Toy')
 
 class Pony extends Toy{   
-     _nb = 1;
+     #_nb = 1;
     constructor(type,_nb,id) {
       super(type);
-      this._nb++
-      this.id = this._nb;
 
-    this.isMoved = function() { r console.log("Kamé Hamé Ha!!"); }
 
+      this.id = this.#_nb;
+      console.log(`Pony #${this.id} is singing -->
+      Dou-double poney, j’fais izi money
+      D’où tu m’connais ? Parle moi en billets violets
+      Dou-double poney, j’fais izi money`);
+      
+      this.#_nb++;
   
     }
   
-    isMoved() {
-        console.log("Kamé Hamé Ha!!")
-      }
+ 
    
 }
 module.exports = Pony;
